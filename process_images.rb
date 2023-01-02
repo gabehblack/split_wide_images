@@ -8,6 +8,7 @@ if ARGV.empty?
   puts "Script cannot run without a directory argument."
   puts "Please add a directory like so:"
   puts "$ ruby #{__FILE__} C:\\Documents\\Images\\Issuu"
+  return
 end
 
 read_folder = File.absolute_path ARGV[0]
